@@ -66,10 +66,10 @@ function calculoConsumo(){
     if(valorkWh == 0 || quantidadeConsumida == 0){
         alert("Insira os dados necessários")
     } else{
-        if(quantidadeConsumida > 100 && quantidadeConsumida < 200){
+        if(quantidadeConsumida > 100 && quantidadeConsumida <= 200){
             valorkWh *= 1.25;
         }
-        if(quantidadeConsumida > 200){
+        else if(quantidadeConsumida > 200){
             valorkWh *= 1.50;
         }
         let valorFinal = valorkWh * quantidadeConsumida;
